@@ -18,7 +18,7 @@ Adress:{
     allowNull:false
 },
 Phone:{
-    type:Sequelize.BIGINT(20),
+    type:Sequelize.INTEGER,
     allowNull:false,
     },
 Email:{

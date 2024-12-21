@@ -4,7 +4,7 @@ const sequelize=require('../util/db.js');
 
 const Clinical_enginner=sequelize.define('ClinicalEnginner',{
     DSSN: {
-        type:Sequelize.BIGINT(20),
+        type:Sequelize.INTEGER,
        allowNull:false,
        primaryKey:true
     },
@@ -17,7 +17,7 @@ const Clinical_enginner=sequelize.define('ClinicalEnginner',{
         allowNull:false
     },
     Phone:{
-        type:Sequelize.BIGINT(20),
+        type:Sequelize.INTEGER,
         allowNull:false,
     },
     Image:{
