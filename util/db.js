@@ -1,1 +1,9 @@
-const Sequelize=require('sequelize');const sequelize=new Sequelize({dialect:'sqlite',storage:'./cmms.sqlite'});module.exports=sequelize;
+const Sequelize = require('sequelize');
+const path = require('path');
+
+const sequelize = new Sequelize({
+    dialect: 'sqlite',
+    storage: path.join(__dirname, '..', 'cmms.sqlite')
+});
+
+module.exports = sequelize;

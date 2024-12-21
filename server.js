@@ -102,8 +102,8 @@ equipment.hasMany(spare_parts)
 sequelize.sync()
 //sequelize.sync({force:true})
 .then(res => {
-    app.listen(5000,() => {
-        console.log('Running')
+    app.listen(5001, '0.0.0.0', () => {
+        console.log('Running on http://0.0.0.0:5001')
        })
       
     })
